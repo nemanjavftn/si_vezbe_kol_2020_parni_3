@@ -35,7 +35,11 @@ namespace DataAccessLayer
                 while (reader.Read())
                 {
 
-                    //napisi dodavanje
+                    Book bk = new Book();
+                    bk.Id = reader.GetInt32(0);
+                    bk.Name = reader.GetString(1);
+                    bk.NumberOfpages = reader.GetInt32(2);
+                    list.Add(bk);
 
                 }
                 return list;

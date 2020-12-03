@@ -10,7 +10,7 @@ namespace BusinessLayer
 {
     public class BookBusiness
     {
-        private readonly BookRepository bookRepository;
+        public readonly BookRepository bookRepository;
 
         public BookBusiness()
         {

@@ -28,7 +28,7 @@ namespace PresentationLayer
 
         private void RefreshData()
         {
-            List<Book> books = this.bookBusiness.GetAllBooks();
+            List<Book> books = this.bookBusiness.bookRepository.GetAllBooks();
             listBoxBooks.Items.Clear();
 
             foreach (Book b in books)

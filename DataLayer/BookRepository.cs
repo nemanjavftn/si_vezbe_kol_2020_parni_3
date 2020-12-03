@@ -10,7 +10,7 @@ namespace DataLayer
 {
     public class BookRepository
     {
-        public List<Book> GetAllStudents()
+        public List<Book> GetAllBooks()
         {
             List<Book> results = new List<Book>();
 

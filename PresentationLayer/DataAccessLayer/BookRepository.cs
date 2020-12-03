@@ -44,7 +44,7 @@ namespace DataAccessLayer
             int result;
             using (SqlConnection con = new SqlConnection(Constants.conString))
             {
-                string commandText = string.Format("INSERT INTO Books VALUES( '{0}', '{1}', {2})", b.Id, b.Name, b.NumberOfPages);
+                string commandText = string.Format("INSERT INTO Books VALUES( '{0}', {1})",  b.Name, b.NumberOfPages);
                 SqlCommand com = new SqlCommand(commandText, con);
 
                 con.Open();

@@ -29,13 +29,33 @@ namespace PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lista = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // lista
+            // 
+            this.lista.FormattingEnabled = true;
+            this.lista.Location = new System.Drawing.Point(12, 350);
+            this.lista.Name = "lista";
+            this.lista.Size = new System.Drawing.Size(288, 82);
+            this.lista.TabIndex = 0;
+            this.lista.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.lista);
+            this.Name = "Form1";
+            this.Text = "Biblioteka";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lista;
     }
 }
 

@@ -46,6 +46,9 @@ namespace PresentationLayer
                 MessageBox.Show("Napravili ste gresku. Pokusajte ponovo");
         }
 
-       
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
